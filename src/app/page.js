@@ -5,10 +5,14 @@ import Hero from "@/components/Hero/Hero";
 import ScrollVideo from "@/components/ScrollVideo";
 import Navbar from "@/components/Navbar";
 import Loader from "@/components/Loader";
+import SliderComponent from '@/components/events/eventSlider'; 
+import { useRef } from 'react';
+
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
   const [showContent, setShowContent] = useState(false)
+  const sliderRef = useRef(null);
 
   useEffect(() => {
     // Set a minimum loading time (e.g., 3 seconds)
@@ -31,14 +35,24 @@ export default function Home() {
       )}
 
       {/* Main Content */}
-      <div className={`transition-opacity duration-500 ${showContent ? 'opacity-100' : 'opacity-0'}`}>
-        <Navbar />
-        
-        {/* Scroll video component */}
+      <main
+        style={{
+          margin: 0,
+          padding: 0,
+          fontFamily: "'Times New Roman', Times, serif",
+          overflow: 'hidden',
+          width: '100vw',
+          height: '100vh',
+        }}
+        className={`transition-opacity duration-500 ${showContent ? 'opacity-100' : 'opacity-0'}`}
+      >
+        <Navbar sliderRef={sliderRef} />
         {/* <ScrollVideo /> */}
-        
         <Hero />
-      </div>
+        <div ref={sliderRef}>
+          <SliderComponent />
+        </div>
+      </main>
     </div>
   );
 }
