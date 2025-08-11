@@ -3,14 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Navbar({ sliderRef }) {
-  // Scroll to slider section
-  const handleEventsClick = (e) => {
-    if (sliderRef && sliderRef.current) {
-      e.preventDefault();
-      sliderRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-  };
+export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50  backdrop-blur-sm border-b border-gray-800">
@@ -35,13 +28,12 @@ export default function Navbar({ sliderRef }) {
           {/* Center - Navigation Links */}
           <div className="hidden md:block">
             <div className="flex items-center space-x-20 font-content text-xl">
-              <a
-                href="#events-slider"
-                onClick={handleEventsClick}
+              <Link
+                href="/events"
                 className="text-gray-300 hover:text-white transition-colors duration-200 font-medium cursor-pointer"
               >
                 Events
-              </a>
+              </Link>
               <Link 
                 href="/about" 
                 className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
@@ -89,8 +81,7 @@ export default function Navbar({ sliderRef }) {
       <div className="md:hidden">
         <div className="px-2 pt-2 pb-3 space-y-1">
           <a
-            href="#events-slider"
-            onClick={handleEventsClick}
+            href="/events"
             className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200 cursor-pointer"
           >
             Events

@@ -36,22 +36,11 @@ export default function Home() {
 
       {/* Main Content */}
       <main
-        style={{
-          margin: 0,
-          padding: 0,
-          fontFamily: "'Times New Roman', Times, serif",
-          overflow: 'hidden',
-          width: '100vw',
-          height: '100vh',
-        }}
         className={`transition-opacity duration-500 ${showContent ? 'opacity-100' : 'opacity-0'}`}
       >
-        <Navbar sliderRef={sliderRef} />
+        <Navbar />
         {/* <ScrollVideo /> */}
         <Hero />
-        <div ref={sliderRef}>
-          <SliderComponent />
-        </div>
       </main>
     </div>
   );
