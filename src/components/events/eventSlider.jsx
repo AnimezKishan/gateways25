@@ -197,7 +197,7 @@ const SliderComponent = () => {
             // Animate header words
             tl.to(activeSlide.querySelectorAll(`.${styles.slideTitle} .word`), {
                 y: "0%",
-                duration: 1,
+                duration: .5,
                 ease: "power4.out",
                 stagger: 0.1,
                 force3d: true,
@@ -211,7 +211,7 @@ const SliderComponent = () => {
 
             tl.to(tagsLines, {
                 y: "0%",
-                duration: 1,
+                duration: .5,
                 ease: "power4.out",
                 stagger: 0.1,
                 opacity: 1,
@@ -219,7 +219,7 @@ const SliderComponent = () => {
 
             tl.to(indexLines, {
                 y: "0%",
-                duration: 1,
+                duration: .5,
                 ease: "power4.out",
                 stagger: 0.1,
                 opacity: 1,
@@ -227,7 +227,7 @@ const SliderComponent = () => {
 
             tl.to(descriptionLines, {
                 y: "0%",
-                duration: 1,
+                duration: .5,
                 ease: "power4.out",
                 stagger: 0.1,
                 opacity: 1,
@@ -236,7 +236,7 @@ const SliderComponent = () => {
             const linkLines = activeSlide.querySelectorAll(`.${styles.slideLink} .line`);
             tl.to(linkLines, {
                 y: "0%",
-                duration: 1,
+                duration: .5,
                 ease: "power4.out",
                 stagger: 0.1,
                 opacity: 1,
@@ -289,7 +289,7 @@ const SliderComponent = () => {
             opacity: 0,
             rotation: exitRotation,
             y: exitY,
-            duration: 2,
+            duration: 1,
             ease: "power4.inOut",
             force3d: true,
             onComplete: () => {
@@ -426,7 +426,7 @@ const SliderComponent = () => {
             window.gsap.to(nextActiveSlide, {
                 y: 0,
                 clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-                duration: 1.5,
+                duration: 1,
                 ease: "power4.out",
                 force3d: true,
                 onStart: () => {
@@ -437,7 +437,7 @@ const SliderComponent = () => {
                     const headerWords = nextActiveSlide.querySelectorAll(`.${styles.slideTitle} .word`);
                     tl.to(headerWords, {
                         y: "0%",
-                        duration: 1,
+                        duration: .5,
                         ease: "power4.out",
                         stagger: 0.1,
                         force3d: true,
@@ -451,7 +451,7 @@ const SliderComponent = () => {
 
                     tl.to(tagsLines, {
                         y: "0%",
-                        duration: 1,
+                        duration: .5,
                         ease: "power4.out",
                         stagger: 0.1,
                         opacity: 1,
@@ -459,7 +459,7 @@ const SliderComponent = () => {
 
                     tl.to(indexLines, {
                         y: "0%",
-                        duration: 1,
+                        duration: .5,
                         ease: "power4.out",
                         stagger: 0.1,
                         opacity: 1,
@@ -467,7 +467,7 @@ const SliderComponent = () => {
 
                     tl.to(descriptionLines, {
                         y: "0%",
-                        duration: 1,
+                        duration: .5,
                         ease: "power4.out",
                         stagger: 0.1,
                         opacity: 1,
@@ -476,7 +476,7 @@ const SliderComponent = () => {
                     const linkLines = nextActiveSlide.querySelectorAll(`.${styles.slideLink} .line`);
                     tl.to(linkLines, {
                         y: "0%",
-                        duration: 1,
+                        duration: .5,
                         ease: "power4.out",
                         stagger: 0.1,
                         opacity: 1,
