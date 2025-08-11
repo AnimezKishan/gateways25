@@ -300,7 +300,7 @@ export default function Hero() {
             fill
             style={{ objectFit: 'cover' }}
           /> */}
-          <video src="/hero.mp4"className="hero-main-image"
+          <video src="/hero.mp4" className="hero-main-image"
             draggable={false}
             alt="hero"
             autoPlay
@@ -343,18 +343,18 @@ export default function Hero() {
       <div className="hero-2-container relative">
         <img src="/gateways-logo.png" alt="gateways logo" className='absolute top-50  left-240 scale-70' />
         <h3 className='font-orbitron font-bold'>Gateways</h3>
-        <p className='font-content'>
+        <p className='font-content text-justify'>
           Gateways is the national technical fest, held annually for over 25 years by the Department of Computer Science at CHRIST (Deemed to be University), Bangalore. Organized by students of the post-graduate MCA (Master of Computer Applications) and MSc AI-ML (Artificial Intelligence and Machine Learning) programs, it aims to be at the forefront of innovation and collaboration, with new ideas and events presented each year.
           We invite colleges from all over India, with enthusiastic participation from those who join us for this gathering of minds. An essential part of Gateways is its robust and dynamic theme, reflecting both current trends and the rich history of the discipline.
         </p>
       </div>
 
       <div className="hero-3-container relative">
-        <img src="/gateways-logo.png" alt="gateways logo" className='gateways-logo absolute top-50  left-240 scale-70' />
+        <img src="/neon-nexus.png" alt="neon nexus" className='neon-nexus absolute top-0  left-150 scale-25' />
         <h3 className='font-orbitron font-bold'>Neon Nexus</h3>
-        <p className='font-content'>
-          Gateways is the national technical fest, held annually for over 25 years by the Department of Computer Science at CHRIST (Deemed to be University), Bangalore. Organized by students of the post-graduate MCA (Master of Computer Applications) and MSc AI-ML (Artificial Intelligence and Machine Learning) programs, it aims to be at the forefront of innovation and collaboration, with new ideas and events presented each year.
-          We invite colleges from all over India, with enthusiastic participation from those who join us for this gathering of minds. An essential part of Gateways is its robust and dynamic theme, reflecting both current trends and the rich history of the discipline.
+        <p className='font-content text-justify'>
+          In the pulsating heart of Nova City, where neon lights cut through the haze and data flows like lifeblood, Neon Nexus transforms Gateways into a living cyberpunk saga. This year’s theme is a convergence of innovation, creativity, and rebellion—a space where coders, creators, and dreamers unite to rewrite the system.
+          Through thrilling competitions and electrifying events, participants will navigate a city shaped by algorithms and alive with possibility. Gateways 2025 invites tech enthusiasts nationwide to step into the grid, embrace the chaos, and become part of the uprising.
         </p>
       </div>
       {/* Scroll Indicator */}

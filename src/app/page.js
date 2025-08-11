@@ -15,7 +15,7 @@ export default function Home() {
     const timer = setTimeout(() => {
       setIsLoading(false)
       // Add a small delay before showing content for smooth transition
-      setTimeout(() => setShowContent(true), 500)
+      setTimeout(() => setShowContent(true), 50)
     }, 4000) // Show loader for 3 seconds
 
     return () => clearTimeout(timer)
@@ -31,7 +31,7 @@ export default function Home() {
       )}
 
       {/* Main Content */}
-      <div className={`transition-opacity duration-500 ${showContent ? 'opacity-100' : 'opacity-0'}`}>
+      <div className={`transition-opacity duration-300 ${showContent ? 'opacity-100' : 'opacity-0'}`}>
         <Navbar />
         
         {/* Scroll video component */}

@@ -52,7 +52,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link href="https://christuniversity.in" target="_blank" className="flex items-center">
               <Image
-                src="/cu-old.webp"
+                src="/cu-new.png"
                 alt="Christ University Logo"
                 width={150}
                 height={100}
