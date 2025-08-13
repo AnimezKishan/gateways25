@@ -12,12 +12,12 @@ export function PageTransitionProvider({ children }) {
             // Show the transition loader
             transitionLoaderRef.current.show();
             
-            // Execute callback after transition completes (around 4 seconds total)
+            
             setTimeout(() => {
                 if (callback) {
                     callback();
                 }
-            }, 4000);
+            }, 1000);
         }
     };
 
