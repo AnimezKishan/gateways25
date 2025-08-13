@@ -28,8 +28,12 @@ const PageTransitionLoader = forwardRef(({ onComplete }, ref) => {
             videoRefRight.current.play()
         }
 
-        // Show loader container
-        gsap.set(loaderRef.current, { display: 'flex' });
+        // Show loader container with lower z-index initially to not block current page
+        gsap.set(loaderRef.current, { 
+            display: 'flex',
+            zIndex: 30, // Lower than nav (z-50) but above page content
+            pointerEvents: 'none' // Don't block interactions initially
+        });
         
         // Reset positions - halves start from opposite sides off-screen
         gsap.set(leftHalfRef.current, { 
@@ -56,8 +60,13 @@ const PageTransitionLoader = forwardRef(({ onComplete }, ref) => {
             duration: 0.8,
             ease: "power3.out",
         })
-        // Hold the converged state
-        .to({}, { duration: 2.5 })
+        // Increase z-index when halves meet to cover the page
+        .set(loaderRef.current, { 
+            zIndex: 70,
+            pointerEvents: 'auto' // Enable interactions when covering the page
+        })
+        // Hold the converged state longer to allow new page to load
+        .to({}, { duration: 1.5 })
         // Auto-disperse after holding
         .call(() => {
             hideTransition();
@@ -95,8 +104,13 @@ const PageTransitionLoader = forwardRef(({ onComplete }, ref) => {
     return (
         <div 
             ref={loaderRef}
-            className="fixed inset-0 h-screen w-screen z-[70] bg-black items-center justify-center"
-            style={{ display: 'none' }}
+            className="fixed inset-0 h-screen w-screen items-center justify-center"
+            style={{ 
+                display: 'none', 
+                backgroundColor: 'transparent', 
+                zIndex: 30,
+                pointerEvents: 'none'
+            }}
         >
             {/* Left Half */}
             <div 
@@ -105,15 +119,9 @@ const PageTransitionLoader = forwardRef(({ onComplete }, ref) => {
                 style={{ 
                     clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
                     transform: 'translateX(-100%)',
-                    zIndex: 10,
-                    backgroundColor: 'rgba(255, 0, 0, 0.3)' // Temporary red for debugging
+                    zIndex: 10
                 }}
             >
-                {/* Spinner - Left */}
-                <div className="absolute bottom-10 left-10 z-20">
-                    <div className="w-20 h-20 border-4 border-transparent text-[#D4FF00] border-t-[#D4FF00] rounded-full animate-spin"></div>
-                </div>
-
                 {/* Background Video - Left Half */}
                 <video
                     ref={videoRefLeft}
@@ -183,8 +191,7 @@ const PageTransitionLoader = forwardRef(({ onComplete }, ref) => {
                 style={{ 
                     clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
                     transform: 'translateX(100%)',
-                    zIndex: 10,
-                    backgroundColor: 'rgba(0, 255, 0, 0.3)' // Temporary green for debugging
+                    zIndex: 10
                 }}
             >
                 {/* Spinner - Right */}
@@ -217,7 +224,7 @@ const PageTransitionLoader = forwardRef(({ onComplete }, ref) => {
                             <mask id="textMaskRightTransition">
                                 <rect width="100%" height="100%" fill="white" />
                                 <text
-                                    x="0%"
+                                    x="5%"
                                     y="50%"
                                     textAnchor="start"
                                     dominantBaseline="middle"
@@ -230,7 +237,7 @@ const PageTransitionLoader = forwardRef(({ onComplete }, ref) => {
                                     WAYS
                                 </text>
                                 <text
-                                    x="0%"
+                                    x="5%"
                                     y="65%"
                                     textAnchor="start"
                                     dominantBaseline="middle"
