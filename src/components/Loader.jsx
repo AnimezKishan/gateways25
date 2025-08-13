@@ -12,7 +12,7 @@ export default function Loader() {
             videoRef.current.play()
         }
         
-        console.log('Loader mounted');
+        // console.log('Loader mounted');
 
         const tl = gsap.timeline()
         
@@ -25,7 +25,7 @@ export default function Loader() {
 
         return () => {
             tl.kill() 
-            
+
         }
     }, [])
 

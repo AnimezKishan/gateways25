@@ -57,7 +57,6 @@
   align-items: center;
   gap: 1rem;
   z-index: 10;
-  pointer-events: none;
 }
 
 .slideTitle {
@@ -91,7 +90,12 @@
   margin: 0;
 }
 
-.slideLink a {
+.slideLink {
+  pointer-events: auto;
+}
+
+.slideLink a,
+.slideLink button {
   text-decoration: none;
   font-family: 'Times New Roman', Times, serif;
   font-size: 0.9rem;
@@ -99,6 +103,7 @@
   letter-spacing: -0.01rem;
   text-transform: uppercase;
   color: #fff;
+  cursor: pointer;
 }
 
 .slideInfo {
@@ -168,7 +173,8 @@
   .slideDescription p,
   .slideTags p,
   .slideIndexWrapper p,
-  .slideLink a {
+  .slideLink a,
+  .slideLink button {
     font-size: 0.8rem;
   }
 

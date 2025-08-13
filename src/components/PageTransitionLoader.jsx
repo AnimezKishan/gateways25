@@ -16,9 +16,9 @@ const PageTransitionLoader = forwardRef(({ onComplete }, ref) => {
     }));
 
     const showTransition = () => {
-        console.log('Starting page transition');
-        console.log('Left half ref:', leftHalfRef.current);
-        console.log('Right half ref:', rightHalfRef.current);
+        // console.log('Starting page transition');
+        // console.log('Left half ref:', leftHalfRef.current);
+        // console.log('Right half ref:', rightHalfRef.current);
         
         // Ensure videos play when component shows
         if (videoRefLeft.current) {
@@ -49,8 +49,8 @@ const PageTransitionLoader = forwardRef(({ onComplete }, ref) => {
             visibility: 'visible'
         });
 
-        console.log('Left half styles after gsap.set:', getComputedStyle(leftHalfRef.current));
-        console.log('Right half styles after gsap.set:', getComputedStyle(rightHalfRef.current));
+        // console.log('Left half styles after gsap.set:', getComputedStyle(leftHalfRef.current));
+        // console.log('Right half styles after gsap.set:', getComputedStyle(rightHalfRef.current));
 
         // Animate halves converging to center
         const tl = gsap.timeline();
@@ -76,7 +76,7 @@ const PageTransitionLoader = forwardRef(({ onComplete }, ref) => {
     };
 
     const hideTransition = () => {
-        console.log('Hiding page transition');
+        // console.log('Hiding page transition');
         
         const tl = gsap.timeline();
         
