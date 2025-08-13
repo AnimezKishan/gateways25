@@ -39,8 +39,10 @@ export default function Home() {
         className={`transition-opacity duration-500 ${showContent ? 'opacity-100' : 'opacity-0'}`}
       >
         <Navbar />
-        {/* <ScrollVideo /> */}
+        
         <Hero />
+
+        {/* <ScrollVideo /> */}
       </main>
     </div>
   );

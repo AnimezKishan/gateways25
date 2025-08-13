@@ -5,6 +5,8 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Image from 'next/image'
 import './styles.css'
+import ScrollVideo from '../ScrollVideo'
+import CircularText from '../CircularText'
 
 export default function Hero() {
   const [countdown, setCountdown] = useState({
@@ -93,6 +95,11 @@ export default function Hero() {
     tl.set(".hero-main-container", {
       scale: 1.25,
     });
+
+    // tl.to(".custom-class", {
+    //   opacity: 0,
+    //   duration:1,
+    // })
 
     tl.to(".hero-main-container", {
       scale: 1,
@@ -273,6 +280,23 @@ export default function Hero() {
       "<1.2" // starts 1.2s before the previous animation
     );
 
+    tl.set(
+      ".hero-3-container",
+      {
+        maskImage: `radial-gradient(circle at 50% 16.1137vh, rgb(0, 0, 0) 96.1949vh, rgba(0, 0, 0, 0) 112.065vh)`,
+      },
+      "<+=2.1"
+    );
+
+    tl.to(
+      ".hero-3-container",
+      {
+        maskImage: `radial-gradient(circle at 50% -40vh, rgb(0, 0, 0) 0vh, rgba(0, 0, 0, 0) 80vh)`,
+        duration: 2,
+      },
+      "<+=0.2" // Start 0.2 seconds after the mask is set
+    );
+
     // Cleanup function
     return () => {
       ScrollTrigger.getAll().forEach(t => t.kill());
@@ -282,7 +306,7 @@ export default function Hero() {
   return (
     <div className="container">
       <div className="overlay"></div>
-      <div className="hero-1-container">
+      <div className="hero-1-container relative">
         <div className="hero-main-container">
           {/* <Image
             className="hero-main-logo"
@@ -307,6 +331,13 @@ export default function Hero() {
             loop
             muted
             style={{ objectFit: 'cover', scale: "1.2" }}></video>
+
+          {/* <CircularText
+            text="SCROLL*TO*REVEAL*"
+            onHover="speedUp"
+            spinDuration={20}
+            className="custom-class absolute top-[85%] left-[75%] scale-75"
+          /> */}
         </div>
         <div className="hero-text-logo-container">
           <div className="hero-text-logo"></div>
@@ -343,20 +374,23 @@ export default function Hero() {
       <div className="hero-2-container relative">
         <img src="/gateways-logo.png" alt="gateways logo" className='absolute top-50  left-240 scale-70' />
         <h3 className='font-orbitron font-bold'>Gateways</h3>
-        <p className='font-content'>
+        <p className='font-content text-justify'>
           Gateways is the national technical fest, held annually for over 25 years by the Department of Computer Science at CHRIST (Deemed to be University), Bangalore. Organized by students of the post-graduate MCA (Master of Computer Applications) and MSc AI-ML (Artificial Intelligence and Machine Learning) programs, it aims to be at the forefront of innovation and collaboration, with new ideas and events presented each year.
           We invite colleges from all over India, with enthusiastic participation from those who join us for this gathering of minds. An essential part of Gateways is its robust and dynamic theme, reflecting both current trends and the rich history of the discipline.
         </p>
       </div>
 
       <div className="hero-3-container relative">
-        <img src="/gateways-logo.png" alt="gateways logo" className='gateways-logo absolute top-50  left-240 scale-70' />
+        <img src="/neon-nexus.png" alt="nn logo" className='nn-logo absolute top-0  left-150 scale-25' />
         <h3 className='font-orbitron font-bold'>Neon Nexus</h3>
-        <p className='font-content'>
+        <p className='font-content text-justify'>
           Gateways is the national technical fest, held annually for over 25 years by the Department of Computer Science at CHRIST (Deemed to be University), Bangalore. Organized by students of the post-graduate MCA (Master of Computer Applications) and MSc AI-ML (Artificial Intelligence and Machine Learning) programs, it aims to be at the forefront of innovation and collaboration, with new ideas and events presented each year.
           We invite colleges from all over India, with enthusiastic participation from those who join us for this gathering of minds. An essential part of Gateways is its robust and dynamic theme, reflecting both current trends and the rich history of the discipline.
         </p>
       </div>
+      {/* <div className="hero-4-container relative">
+        <ScrollVideo />
+      </div> */}
       {/* Scroll Indicator */}
       <div className="scroll-indicator">
         <svg
