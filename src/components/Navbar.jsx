@@ -2,8 +2,18 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePageTransition } from '@/hooks/usePageTransition'
+import { useRouter } from 'next/navigation'
 
 export default function Navbar() {
+  const { startPageTransition } = usePageTransition();
+  const router = useRouter();
+
+  const handleNavigation = (href) => {
+    startPageTransition(() => {
+      router.push(href);
+    });
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50  backdrop-blur-sm border-b border-gray-800">
@@ -28,24 +38,24 @@ export default function Navbar() {
           {/* Center - Navigation Links */}
           <div className="hidden md:block">
             <div className="flex items-center space-x-20 font-content text-xl">
-              <Link
-                href="/events"
+              <button
+                onClick={() => handleNavigation('/events')}
                 className="text-gray-300 hover:text-white transition-colors duration-200 font-medium cursor-pointer"
               >
                 Events
-              </Link>
-              <Link 
-                href="/about" 
-                className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
+              </button>
+              <button
+                onClick={() => handleNavigation('/about')}
+                className="text-gray-300 hover:text-white transition-colors duration-200 font-medium cursor-pointer"
               >
                 About
-              </Link>
-              <Link 
-                href="/brochure" 
-                className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
+              </button>
+              <button
+                onClick={() => handleNavigation('/brochure')}
+                className="text-gray-300 hover:text-white transition-colors duration-200 font-medium cursor-pointer"
               >
                 Brochure
-              </Link>
+              </button>
             </div>
           </div>
 
@@ -80,24 +90,24 @@ export default function Navbar() {
       {/* Mobile menu (hidden by default) */}
       <div className="md:hidden">
         <div className="px-2 pt-2 pb-3 space-y-1">
-          <a
-            href="/events"
-            className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200 cursor-pointer"
+          <button
+            onClick={() => handleNavigation('/events')}
+            className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200 cursor-pointer w-full text-left"
           >
             Events
-          </a>
-          <Link 
-            href="/about" 
-            className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200"
+          </button>
+          <button
+            onClick={() => handleNavigation('/about')}
+            className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200 cursor-pointer w-full text-left"
           >
             About
-          </Link>
-          <Link 
-            href="/brochure" 
-            className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200"
+          </button>
+          <button
+            onClick={() => handleNavigation('/brochure')}
+            className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200 cursor-pointer w-full text-left"
           >
             Brochure
-          </Link>
+          </button>
         </div>
       </div>
     </nav>

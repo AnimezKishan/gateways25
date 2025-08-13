@@ -1,0 +1,208 @@
+[
+  {
+    "Sl No.": 1,
+    "Events": "IT QUIZ",
+    "Type": "Non-Tech",
+    "Event Name": "The Phishing Paradox",
+    "Description": "The screen flickers to life with a distorted login prompt. Get ready for a mind-bending IT quiz where nothing is as it seems! In Phishing Paradox, you'll face a mix of real tech questions and cleverly disguised traps designed to trick even the smartest players. Some questions will test your IT knowledge, while others will challenge you to spot sneaky cybersecurity scams. The twist? You'll never know for sure which is which! The game plays with your head - sometimes the obvious answer is wrong, and sometimes the weirdest choice is actually right. As you progress, the quiz gets more unpredictable, with questions that might change or even track how quickly you answer. It's not just about what you know, but how well you can think on your feet and avoid getting fooled. The winner gets bragging rights as the most \"unphishable\" player in the room",
+    "Event Heads": [
+      { "Name": "Kezya Steffyn", "Class": "2 MSAIM", "Contact": "7825931777" },
+      { "Name": "Shreya G", "Class": "1 MSAIM", "Contact": "8903472125" },
+      { "Name": "Rahul Gupta", "Class": "1 MCA B", "Contact": "7506732498" }
+    ],
+    "Team Size": "2",
+    "Prize Pool": 7000,
+    "Venue": "Assembly Hall",
+    "Date (tentative)": "Sept 25",
+    "Registration": "On Spot",
+    "Eligibility": "PG Computer Science and Data Science"
+  },
+  {
+    "Sl No.": 2,
+    "Events": "IT Manager",
+    "Type": "Non-Tech",
+    "Event Name": "Neon Handshake",
+    "Description": "The elevator doors hiss open to reveal a lounge bathed in sickly violet light. Your augmented reality overlay flickers - was that a glitch, or did the person you just shook hands with have no corporate profile? At Neon Handshake, IT managers and tech leaders connect in a revolutionary networking event that blends high-stakes business with immersive atmosphere. Your handshake literally glows as you meet potential collaborators, while augmented reality displays reveal real-time professional insights about everyone in the room. The space transforms into an electrifying mix of nightclub energy and corporate strategy session, where deals materialize through smart contracts, digital tokens replace business cards, and your reputation score fluctuates with every interaction.",
+    "Event Heads": [
+      { "Name": "Robin Rajesh", "Class": "2 MSAIM", "Contact": "8369500694" },
+      { "Name": "Samuel Shine", "Class": "1 MCA A", "Contact": "7899412346" },
+      { "Name": "Isha", "Class": "2 MCA B", "Contact": "" }
+    ],
+    "Team Size": "1",
+    "Prize Pool": 3000,
+    "Venue": "Seminar Hall",
+    "Date (tentative)": "Sept 26",
+    "Registration": "On Spot",
+    "Eligibility": "PG Computer Science and Data Science"
+  },
+  {
+    "Sl No.": 3,
+    "Events": "Surprise Event",
+    "Type": "Non-Tech",
+    "Event Name": "Vault 404",
+    "Description": "The steel door seals behind you with a sound like a database corruption. Step into the unknown with Vault 404, an unpredictable experience where the only rule is to expect the unexpected. This surprise-packed challenge will push contestants far beyond their comfort zones through a series of curveballs, spontaneous scenarios, and reality-bending twists. No technical skills required—just raw quick-thinking, creativity, and the ability to thrive in chaos. One moment you might be negotiating with a mysterious character, the next you're solving bizarre puzzles under time pressure, or improvising your way through completely absurd situations.",
+    "Event Heads": [
+      { "Name": "Akhil Kumar Gope", "Class": "2 MCA A", "Contact": "8777861147" },
+      { "Name": "Bharat Harshan", "Class": "2 MCA B", "Contact": "8075334144" },
+      { "Name": "R Karan", "Class": "1 MCA B", "Contact": "9971012177" },
+      { "Name": "Saumya Sahil linda", "Class": "1 MSAIM", "Contact": "8789494739" }
+    ],
+    "Team Size": "2-4",
+    "Prize Pool": 7000,
+    "Venue": "815",
+    "Date (tentative)": "Sept 26",
+    "Registration": "No On-Spot",
+    "Eligibility": "PG Computer Science and Data Science"
+  },
+  {
+    "Sl No.": 4,
+    "Events": "Treasure Hunt",
+    "Type": "Non-Tech",
+    "Event Name": "The Nexus Trail",
+    "Description": "Your phone buzzes with the first clue—a glitching AR waypoint that wasn’t there a second ago. Embark on The Nexus Trail, a high-tech treasure hunt where you’ll race through the fest to uncover hidden clues, solve puzzles, and unlock digital rewards! Using your phone and teamwork, you’ll follow a trail of augmented reality markers, cryptic riddles, and real-world challenges—all tied to the neon-lit world of Neon Nexus. Some clues test your tech smarts, others your creativity, but all lead you closer to the ultimate prize. Watch out for decoys, time-limited bonuses, and rival teams trying to outpace you! The first to crack the final code wins glory—and maybe a secret stash of futuristic loot.",
+    "Event Heads": [
+      { "Name": "Mansi Yadav", "Class": "2 MSAIM", "Contact": "8262871660" },
+      { "Name": "Jai Pareek", "Class": "1 MCA B", "Contact": "6350553708" },
+      { "Name": "Joshua Joby", "Class": "1 MCA A", "Contact": "9606827876" },
+      { "Name": "Yeshwanth S", "Class": "2 MSAIM", "Contact": "9445571303" }
+    ],
+    "Team Size": "2-4",
+    "Prize Pool": 12500,
+    "Venue": "911",
+    "Date (tentative)": "Sept 25",
+    "Registration": "No On-Spot",
+    "Eligibility": "PG Computer Science and Data Science"
+
+  },
+  {
+    "Sl No.": 5,
+    "Events": "Gaming",
+    "Type": "Non-Tech",
+    "Event Name": "Arcadia X",
+    "Description": "The app installs itself at 3:33 AM. No download button - just a notification: \"YOUR QUALIFYING MATCH BEGINS IN 13h 13m.\" Step into Arcadia X, the ultimate mobile gaming showdown where players battle it out in real-time on their phones! Compete in fast-paced, head-to-head matches of the hottest mobile game with your skills put to the test in a neon-lit, high-energy arena. Whether you’re a casual player or a ranked pro, everyone gets a shot at glory—just bring your phone, quick reflexes, and a killer strategy. Win epic prizes, climb the leaderboard, and prove you’re the best in Neon Nexus!",
+    "Event Heads": [
+      { "Name": "Gavin", "Class": "2 MCA A", "Contact": "" },
+      { "Name": "Anosh Sibi", "Class": "2 MCA B", "Contact": "8884354953" },
+      { "Name": "Alen Babu T", "Class": "1 MSAIM", "Contact": "9544211839" },
+      { "Name": "Sourav", "Class": "1 MCA B", "Contact": "" }
+    ],
+    "Team Size": "1-4",
+    "Prize Pool": 12500,
+    "Venue": "814",
+    "Date (tentative)": "Sept 26",
+    "Registration": "On Spot",
+    "Eligibility": "PG Computer Science and Data Science"
+
+  },
+  {
+    "Sl No.": 6,
+    "Events": "Photography",
+    "Type": "Non-Tech",
+    "Event Name": "Neotokyo Frames",
+    "Description": "The camera app glitches open before you tap it, its viewfinder already framing scenes that haven’t happened yet. Neotokyo Frames isn’t just a contest—it’s an invitation to capture what shouldn’t be seen. The neon lights hum louder through your lens, revealing phantom figures in the crowd that vanish when you lower your phone. Your gallery fills with shots you don’t remember taking—blurred faces with glowing eyes, distorted reflections that move independently, and a recurring shadow that’s always closer in each subsequent photo. The judges swear the \"best\" entries will be displayed in the official gallery, but past winners whisper about images that update after midnight, revealing new details… or new faces. The grand prize? A vintage lens that makes every subject look slightly wrong in ways you can’t quite pinpoint. \"Smile for the camera—if you can still remember how.\"",
+    "Event Heads": [
+      { "Name": "Megha Ullas", "Class": "2 MSAIM", "Contact": "7306919070" },
+      { "Name": "Neha K", "Class": "1 MSAIM", "Contact": "8754626295" },
+      { "Name": "Ayur", "Class": "2 MCA A", "Contact": "7263817112" }
+    ],
+    "Team Size": "1",
+    "Prize Pool": 3000,
+    "Venue": "Briefing in 815",
+    "Date (tentative)": "Sept 25",
+    "Registration": "On Spot",
+    "Eligibility": "PG Computer Science and Data Science"
+  },
+  {
+    "Sl No.": 7,
+    "Events": "IOT",
+    "Type": "Tech",
+    "Event Name": "NexusNet",
+    "Description": "The smart devices wake up before you touch them—lights flickering to life in patterns that almost resemble Morse code, sensors registering movement where there is none. IoT NexusNet isn’t just a challenge; it’s a haunting. The provided gadgets hum with a will of their own, their default settings subtly altered, their logs filled with commands no one remembers inputting. Teams scramble to build connected systems, but the network topology shifts unpredictably, as if something else is rerouting the signals. The smart locks click open and shut at random, the temperature sensors spike to infernal readings, and the cameras—especially the cameras—capture fleeting shadows just outside the frame.",
+    "Event Heads": [
+      { "Name": "Anjali Krishna", "Class": "2 MCA B", "Contact": "9656295635" },
+      { "Name": "Akashdeep Dey", "Class": "1 MCA B", "Contact": "" },
+      { "Name": "Sachin D", "Class": "1 MCA B", "Contact": "9901952488" }
+    ],
+    "Team Size": "1-3",
+    "Prize Pool": 13500,
+    "Venue": "815",
+    "Date (tentative)": "Sept 26",
+    "Registration": "On Spot",
+    "Eligibility": "PG CS and Electronics"
+  },
+  {
+    "Sl No.": 8,
+    "Events": "CTF",
+    "Type": "Tech",
+    "Event Name": "NodeRaid",
+    "Description": "Gear up for CTF NodeRaid, a fast-paced cybersecurity showdown where teams race to hack, defend, and conquer a network of vulnerable nodes! Crack passwords, exploit hidden flaws, and capture digital flags—all while protecting your own node from rival attacks. With real-world hacking scenarios and escalating difficulty levels, this is your chance to test your skills in a safe but thrilling cyber-battlefield. Whether you're a seasoned hacker or a curious beginner, teamwork and quick thinking will lead you to victory.",
+    "Event Heads": [
+      { "Name": "Karthik Devnani", "Class": "1 MCA A", "Contact": "8955337527" },
+      { "Name": "Shashi", "Class": "2 MCA A", "Contact": "9823236280" },
+      { "Name": "Gokul S", "Class": "2 MCA A", "Contact": "9446535503" }
+    ],
+    "Team Size": "2",
+    "Prize Pool": 7000,
+    "Venue": "MCA Lab",
+    "Date (tentative)": "Sept 25",
+    "Registration": "On Spot",
+    "Eligibility": "PG Computer Science and Data Science"
+  },
+  {
+    "Sl No.": 9,
+    "Events": "Coding - Debugging",
+    "Type": "Tech",
+    "Event Name": "SyntaxFall",
+    "Description": "Dive into SyntaxFall, a high-pressure coding showdown where broken programs and glitchy algorithms are your battleground. You'll face a series of intentionally bugged code snippets—some with obvious errors, others with deeply hidden flaws—all while a ticking clock ramps up the tension. The catch? You can't rewrite anything; you must debug on the fly using only strategic edits. Caffeine provided. Sanity not guaranteed.",
+    "Event Heads": [
+      { "Name": "Annette Elizabeth", "Class": "1 MCA B", "Contact": "9513184401" },
+      { "Name": "Nitish Churiwala", "Class": "2 MCA B", "Contact": "8348713192" },
+      { "Name": "Priyadharshini", "Class": "2 MSAIM", "Contact": "9819057316" }
+    ],
+    "Team Size": "2",
+    "Prize Pool": 7000,
+    "Venue": "MCA Lab",
+    "Date (tentative)": "Sept 26",
+    "Registration": "On Spot",
+    "Eligibility": "PG Computer Science and Data Science"
+  },
+  {
+    "Sl No.": 10,
+    "Events": "UI/UX",
+    "Type": "Tech",
+    "Event Name": "PixelSynth",
+    "Description": "Step into PixelSynth, a futuristic UI/UX showdown where designers craft interfaces for technologies that don’t exist yet. You’ll get cryptic prompts like \"Design a dashboard for AI dream analysis\" or \"Create a gesture-based OS for zero-gravity users\"—then rapidly prototype your vision under neon-lit time pressure. Tools don’t matter, but your ability to merge cyberpunk aesthetics with ruthless usability does.",
+    "Event Heads": [
+      { "Name": "Rohan Cherian Jacob", "Class": "2 MCA B", "Contact": "6282292458" },
+      { "Name": "Amal Jyothi", "Class": "2 MCA B", "Contact": "7034231762" },
+      { "Name": "Meet Virani", "Class": "1 MSAIM", "Contact": "7861944144" }
+    ],
+    "Team Size": "2",
+    "Prize Pool": 7000,
+    "Venue": "MCA Lab",
+    "Date (tentative)": "Sept 25",
+    "Registration": "On Spot",
+    "Eligibility": "PG Computer Science and Data Science"
+
+  },
+  {
+    "Sl No.": 11,
+    "Events": "Hackathon",
+    "Type": "Tech",
+    "Event Name": "sudo //build",
+    "Description": "The corporate overlords have cut the power. The mainframe is bleeding corrupted data across flickering terminals. In this 24-hour descent into digital anarchy, you won't just hack systems—you'll violate them. When the crimson emergency lights flare at midnight, your team will receive a black-box brief containing something morally ambiguous. The judging panel consists of ex-hackers, crypto-anarchists, and one unverified AI entity—all scoring you on creativity, destruction, and how well you exploit the rulebook's gaps.",
+    "Event Heads": [
+      { "Name": "Parichoy Nandhi", "Class": "2 MCA A", "Contact": "6295810943" },
+      { "Name": "Kanika Jain", "Class": "1 MCA A", "Contact": "" },
+      { "Name": "Varun C", "Class": "2 MSAIM", "Contact": "9353853617" },
+      { "Name": "Nishit D", "Class": "1 MSAIM", "Contact": "9879580870" }
+    ],
+    "Team Size": "1-4",
+    "Prize Pool": 20000,
+    "Venue": "Online",
+    "Date (tentative)": "Sept 26",
+    "Registration": "No On-Spot",
+    "Eligibility": "PG Computer Science and Data Science"
+
+  }
+]

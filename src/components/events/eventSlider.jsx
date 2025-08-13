@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import styles from '@/components/events/Slider.module.css';
 import slides from '@/data/slides'; // Adjust path as needed
+import EventModal from '@/components/EventModal';
+import eventDetails from '@/data/EventDetails.json';
 
 // You'll need to install these as dependencies or use CDN in _document.js
 // npm install gsap split-type
@@ -14,6 +16,8 @@ const SliderComponent = () => {
     const [isAnimating, setIsAnimating] = useState(false);
     const [scrollAllowed, setScrollAllowed] = useState(true);
     const [lastScrollTime, setLastScrollTime] = useState(0);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedEvent, setSelectedEvent] = useState(null);
     const totalSlides = slides.length;
 
     useEffect(() => {
@@ -58,6 +62,15 @@ const SliderComponent = () => {
         };
     }, []);
 
+    const handleLearnMore = (slideData) => {
+        // Find the corresponding event from EventDetails.json
+        const event = eventDetails.find(event => event["Sl No."] === slideData.eventId);
+        if (event) {
+            setSelectedEvent(event);
+            setIsModalOpen(true);
+        }
+    };
+
     const createSlide = (slideIndex) => {
         const slideData = slides[slideIndex - 1];
 
@@ -90,9 +103,12 @@ const SliderComponent = () => {
                         <p>{slideData.slideDescription}</p>
                     </div>
                     <div className={styles.slideLink}>
-                        <a href={slideData.slideUrl} target="_blank" rel="noopener noreferrer">
+                        <button 
+                            onClick={() => handleLearnMore(slideData)}
+                            className="text-inherit hover:text-cyan-400 transition-colors duration-200 cursor-pointer bg-transparent border-none font-inherit"
+                        >
                             Learn More
-                        </a>
+                        </button>
                     </div>
                 </div>
 
@@ -267,7 +283,7 @@ const SliderComponent = () => {
 
         setCurrentSlide(nextSlideIndex);
 
-        console.log(`Transitioning from slide ${currentIndex} to slide ${nextSlideIndex}`);
+        // console.log(`Transitioning from slide ${currentIndex} to slide ${nextSlideIndex}`);
 
         // Find the next slide that will become active
         const nextActiveSlide = slider.querySelector(`[data-slide-index="${nextSlideIndex}"]`);
@@ -520,7 +536,7 @@ const SliderComponent = () => {
             return;
         }
 
-        console.log(`Current active slide: ${currentActiveSlide.getAttribute('data-slide-index')}`);
+        // console.log(`Current active slide: ${currentActiveSlide.getAttribute('data-slide-index')}`);
 
         animateSlide(direction);
     };
@@ -576,9 +592,17 @@ const SliderComponent = () => {
     }, [isAnimating, scrollAllowed, lastScrollTime, currentSlide]);
 
     return (
-        <div className={styles.slider} ref={sliderRef}>
-            {slides.map((_, index) => createSlide(index + 1))}
-        </div>
+        <>
+            <div className={styles.slider} ref={sliderRef}>
+                {slides.map((_, index) => createSlide(index + 1))}
+            </div>
+            
+            <EventModal 
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                eventData={selectedEvent}
+            />
+        </>
     );
 };
 
