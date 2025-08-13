@@ -8,14 +8,12 @@ export default function Loader() {
     const loader = useRef(null)
 
     useEffect(() => {
-        // Ensure video plays when component mounts
         if (videoRef.current) {
             videoRef.current.play()
         }
         
         console.log('Loader mounted');
 
-        // GSAP animation to hide loader after delay
         const tl = gsap.timeline()
         
         tl.to(loader.current, {
@@ -26,7 +24,8 @@ export default function Loader() {
         })
 
         return () => {
-            tl.kill() // Clean up timeline
+            tl.kill() 
+            
         }
     }, [])
 
