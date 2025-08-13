@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "@/components/LenisProvider";
+import { PageTransitionProvider } from "@/hooks/usePageTransition";
+import PageTransitionWrapper from "@/components/PageTransitionWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,9 +25,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#111117]`}
       >
-        <LenisProvider>
-          {children}
-        </LenisProvider>
+        <PageTransitionProvider>
+          <LenisProvider>
+            {children}
+          </LenisProvider>
+          <PageTransitionWrapper />
+        </PageTransitionProvider>
       </body>
     </html>
   );

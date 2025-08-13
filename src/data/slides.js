@@ -1,38 +1,91 @@
 const slides = [
     {
-        slideTitle: "FigEvents 2025 - Slide 1",
-        slideDescription: "Official logo for FigEvents 2025, featuring a vibrant gradient and bold typography.",
+        slideTitle: "The Phishing Paradox",
+        slideDescription: "A mind-bending IT quiz where nothing is as it seems! Test your knowledge while avoiding cleverly disguised cybersecurity traps.",
         // slideUrl: "https://www.figevents.com",
-        slideTags: ["Design", "Logo", "2025"],
-        slideImg: "/eventpics/wallpaper.jpg"
+        slideTags: ["Non-Tech", "IT Quiz", "Cybersecurity"],
+        slideImg: "/eventpics/wallpaper.jpg",
+        eventId: 1 // Corresponds to IT QUIZ
     },
     {
-        slideTitle: "FigEvents 2025 - Slide 2", 
-        slideDescription: "Creative design showcase for modern event branding and visual identity.",
+        slideTitle: "Neon Handshake", 
+        slideDescription: "Revolutionary networking event blending business with immersive atmosphere. Connect with augmented reality and smart contracts.",
         // slideUrl: "https://www.figevents.com",
-        slideTags: ["Branding", "Events", "Creative"],
-        slideImg: "/eventpics/wallpaper2.jpeg"
+        slideTags: ["Non-Tech", "Networking", "AR"],
+        slideImg: "/eventpics/wallpaper2.jpeg",
+        eventId: 2 // Corresponds to IT Manager
     },
     {
-        slideTitle: "FigEvents 2025 - Slide 3",
-        slideDescription: "Typography and gradient exploration for contemporary event design systems.",
+        slideTitle: "Vault 404",
+        slideDescription: "An unpredictable experience where the only rule is to expect the unexpected. Reality-bending twists and spontaneous challenges await.",
         // slideUrl: "https://www.figevents.com", 
-        slideTags: ["Typography", "Gradient", "Modern"],
-        slideImg: "/eventpics/wallpaper3.jpg"
+        slideTags: ["Non-Tech", "Surprise", "Mystery"],
+        slideImg: "/eventpics/wallpaper3.jpg",
+        eventId: 3 // Corresponds to Surprise Event
     },
     {
-        slideTitle: "FigEvents 2025 - Slide 4",
-        slideDescription: "Advanced design patterns and innovative approaches for next-generation events.",
+        slideTitle: "The Nexus Trail",
+        slideDescription: "High-tech treasure hunt with augmented reality markers, cryptic riddles, and real-world challenges. Race to crack the final code!",
         // slideUrl: "https://www.figevents.com",
-        slideTags: ["Innovation", "Patterns", "Future"],
-        slideImg: "/eventpics/wallpaper4.webp"
+        slideTags: ["Non-Tech", "Treasure Hunt", "AR"],
+        slideImg: "/eventpics/wallpaper4.webp",
+        eventId: 4 // Corresponds to Treasure Hunt
     },
     {
-        slideTitle: "FigEvents 2025 - Slide 5",
-        slideDescription: "Cutting-edge visual effects and motion graphics for immersive experiences.",
+        slideTitle: "Arcadia X",
+        slideDescription: "Ultimate mobile gaming showdown in a neon-lit arena. Compete in fast-paced matches and prove you're the best in Neon Nexus!",
         // slideUrl: "https://www.figevents.com",
-        slideTags: ["Motion", "Graphics", "Immersive"],
-        slideImg: "/eventpics/wallpaper5.jpg"
+        slideTags: ["Non-Tech", "Gaming", "Mobile"],
+        slideImg: "/eventpics/wallpaper5.jpg",
+        eventId: 5 // Corresponds to Gaming
+    },
+    {
+        slideTitle: "Neotokyo Frames",
+        slideDescription: "Capture what shouldn't be seen through your lens. A photography contest where neon lights reveal phantom figures and reality bends.",
+        // slideUrl: "https://www.figevents.com",
+        slideTags: ["Non-Tech", "Photography", "Creative"],
+        slideImg: "/eventpics/wallpaper.jpg",
+        eventId: 6 // Corresponds to Photography
+    },
+    {
+        slideTitle: "NexusNet",
+        slideDescription: "Smart devices wake up before you touch them. Build connected IoT systems while the network topology shifts unpredictably.",
+        // slideUrl: "https://www.figevents.com",
+        slideTags: ["Tech", "IoT", "Hardware"],
+        slideImg: "/eventpics/wallpaper2.jpeg",
+        eventId: 7 // Corresponds to IOT
+    },
+    {
+        slideTitle: "NodeRaid",
+        slideDescription: "Fast-paced cybersecurity showdown! Hack, defend, and conquer vulnerable nodes in this thrilling cyber-battlefield.",
+        // slideUrl: "https://www.figevents.com",
+        slideTags: ["Tech", "CTF", "Cybersecurity"],
+        slideImg: "/eventpics/wallpaper3.jpg",
+        eventId: 8 
+    },
+    {
+        slideTitle: "SyntaxFall",
+        slideDescription: "High-pressure coding where broken programs are your battleground. Debug on the fly with strategic edits under time pressure.",
+        // slideUrl: "https://www.figevents.com",
+        slideTags: ["Tech", "Coding", "Debugging"],
+        slideImg: "/eventpics/wallpaper4.webp",
+        eventId: 9 
+    },
+    {
+        slideTitle: "PixelSynth",
+        slideDescription: "Futuristic UI/UX showdown! Design interfaces for technologies that don't exist yet under neon-lit time pressure.",
+        // slideUrl: "https://www.figevents.com",
+        slideTags: ["Tech", "UI/UX", "Design"],
+        slideImg: "/eventpics/wallpaper5.jpg",
+        eventId: 10
+    },
+    {
+        slideTitle: "sudo //build",
+        slideDescription: "24-hour descent into digital anarchy. Hack systems, violate protocols, and exploit rulebook gaps in this ultimate hackathon.",
+        // slideUrl: "https://www.figevents.com",
+        slideTags: ["Tech", "Hackathon", "24hr"],
+        slideImg: "/eventpics/wallpaper.jpg",
+        eventId: 11
     }
 ];
 
