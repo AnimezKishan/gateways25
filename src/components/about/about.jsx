@@ -42,7 +42,7 @@ export function LampDemo() {
             ease: "easeInOut",
           }}
           className="mt-4 bg-gradient-to-br from-white to-white py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl pt-45 font-orbitron">
-          Coordinator <br /> 
+          Coordinators <br /> 
         </motion.h1>
         {/* 3 rectangular containers */}
         <div className="mt-12 flex flex-wrap gap-8 justify-center items-center object-contain">
