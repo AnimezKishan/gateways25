@@ -45,12 +45,19 @@ const socialLinks = [
   },
 ];
 
+const developers = [
+  { name: "Kishan Kumar", linkedin: "https://www.linkedin.com/in/kishan-kumar-4ba257200/" },
+  { name: "Tushar Ghosh", linkedin: "https://www.linkedin.com/in/tushar-ghosh-315142219/" },
+  { name: "Darshan Heble", linkedin: "https://www.linkedin.com/in/darshanheble/" },
+  { name: "Vyshnavi K", linkedin: "https://www.linkedin.com/in/vyshnavi-kathrine/" },
+];
+
 const Footer = () => {
   return (
     <footer className="bg-black p-5 pr-14 px-12">
       <div className="flex justify-between">
         <div className="flex gap-2">
-          <span className="font-bold text-xl">Gateways 25</span>
+          <span className="font-bold font-orbitron text-xl">Gateways 25</span>
         </div>
         <div className="flex gap-2">
           {socialLinks.map((social, index) => (
@@ -64,6 +71,26 @@ const Footer = () => {
               {social.icon}
             </a>
           ))}
+        </div>
+      </div>
+      
+      {/* Developed By Section */}
+      <div className="mt-6 pt-4 border-t border-gray-700">
+        <div className="text-center">
+          <h3 className="text-sm font-semibold text-gray-300 mb-3 font-orbitron">Developed By</h3>
+          <div className="flex flex-wrap justify-center gap-4">
+            {developers.map((developer, index) => (
+              <a
+                key={index}
+                href={developer.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-gray-400 hover:text-white transition-colors duration-200"
+              >
+                {developer.name}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </footer>

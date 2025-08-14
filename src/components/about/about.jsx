@@ -11,8 +11,10 @@ export function LampDemo() {
   ];
 
   const developerImages = [
-    { name: "Kishan", image: "/about/kishan (1)_Nero_AI_Image_Denoiser.jpeg.jpg" },
-    { name: "Tushar", image: "/about/tushar.jpg" }
+    { name: "Kishan Kumar", image: "/about/kishan (1)_Nero_AI_Image_Denoiser.jpeg.jpg" },
+    { name: "Tushar Ghosh", image: "/about/tushar.jpg" },
+    { name: "Darshan Heble", image: "/about/placeholder.svg" },
+    { name: "Vyshnavi K", image: "/about/placeholder.svg" }
   ];
 
   const coreTeamImages = [

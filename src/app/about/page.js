@@ -1,5 +1,6 @@
 'use client';
 import { LampDemo } from "@/components/about/about";
+import Footer from "@/components/footer";
 import Navbar from "@/components/Navbar";
 
 export default function Events() {
@@ -14,6 +15,7 @@ export default function Events() {
             }}>
                 <LampDemo />
         </main>
+        <Footer />
         </>
     );
 }

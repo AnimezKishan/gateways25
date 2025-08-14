@@ -4,7 +4,7 @@ const slides = [
         slideDescription: "A mind-bending IT quiz where nothing is as it seems! Test your knowledge while avoiding cleverly disguised cybersecurity traps.",
         // slideUrl: "https://www.figevents.com",
         slideTags: ["Non-Tech", "IT Quiz", "Cybersecurity"],
-        slideImg: "/eventpics/wallpaper.jpg",
+        slideImg: "/eventpics/wallpaper2.jpeg",
         eventId: 1 // Corresponds to IT QUIZ
     },
     {
@@ -84,7 +84,7 @@ const slides = [
         slideDescription: "24-hour descent into digital anarchy. Hack systems, violate protocols, and exploit rulebook gaps in this ultimate hackathon.",
         // slideUrl: "https://www.figevents.com",
         slideTags: ["Tech", "Hackathon", "24hr"],
-        slideImg: "/eventpics/wallpaper.jpg",
+        slideImg: "/eventpics/wallpaper2.jpeg",
         eventId: 11
     }
 ];
