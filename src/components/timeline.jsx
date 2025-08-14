@@ -46,7 +46,7 @@ export const Timeline = ({ data }) => {
             key={index}
             className="flex justify-start pt-10 md:gap-10 md:pt-40"
           >
-            <div className="sticky top-40 z-20 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row lg:max-w-sm">
+            <div className="sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row lg:max-w-sm">
               {/* Cyberpunk Timeline Node */}
               <div
                 className="absolute left-2.5 -top-2 flex h-12 w-12 items-center justify-center rounded-full"
