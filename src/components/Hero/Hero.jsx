@@ -347,23 +347,23 @@ export default function Hero() {
               Sept 15<br />
               2025
             </h3>
-            <div className="countdown-timer font-orbitron text-sm mt-2 ">
+            <div className="countdown-timer font-orbitron text-sm mt-2" style={{ color: '#D4FF00', backgroundImage: 'none', WebkitTextFillColor: '#D4FF00' }}>
               <div className="flex gap-4 justify-center">
                 <div className="text-center">
                   <div className="text-lg font-bold">{countdown.days.toString().padStart(2, '0')}</div>
-                  <div className="text-xs opacity-70">DAYS</div>
+                  <div className="text-xs">DAYS</div>
                 </div>
                 <div className="text-center">
                   <div className="text-lg font-bold">{countdown.hours.toString().padStart(2, '0')}</div>
-                  <div className="text-xs opacity-70">HOURS</div>
+                  <div className="text-xs">HOURS</div>
                 </div>
                 <div className="text-center">
                   <div className="text-lg font-bold">{countdown.minutes.toString().padStart(2, '0')}</div>
-                  <div className="text-xs opacity-70">MINS</div>
+                  <div className="text-xs">MINS</div>
                 </div>
                 <div className="text-center">
                   <div className="text-lg font-bold">{countdown.seconds.toString().padStart(2, '0')}</div>
-                  <div className="text-xs opacity-70">SECS</div>
+                  <div className="text-xs">SECS</div>
                 </div>
               </div>
             </div>
