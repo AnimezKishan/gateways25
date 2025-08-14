@@ -50,12 +50,13 @@ export default function Navbar() {
               >
                 About
               </button>
+              <a href="https://heyzine.com/flip-book/746bdd4368.html" target='_blank'>
               <button
-                onClick={() => handleNavigation('/brochure')}
                 className="text-gray-300 hover:text-white transition-colors duration-200 font-medium cursor-pointer"
               >
                 Brochure
               </button>
+              </a>
             </div>
           </div>
 
@@ -102,12 +103,13 @@ export default function Navbar() {
           >
             About
           </button>
+          <a href="https://heyzine.com/flip-book/746bdd4368.html" target='_blank'>
           <button
-            onClick={() => handleNavigation('/brochure')}
             className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200 cursor-pointer w-full text-left"
           >
             Brochure
           </button>
+          </a>
         </div>
       </div>
     </nav>

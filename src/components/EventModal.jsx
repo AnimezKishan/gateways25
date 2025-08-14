@@ -244,13 +244,13 @@ const EventModal = ({ isOpen, onClose, eventData }) => {
                     <div className="flex flex-col sm:flex-row gap-4">
                         <button
                             onClick={handleRegister}
-                            className="flex-1 bg-gradient-to-r  from-[#00FFFF] via-[#6FFF00] to-[#D4FF00] text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/25 font-mono uppercase tracking-wider"
+                            className="flex-1 bg-gradient-to-r  from-[#00FFFF] via-[#6FFF00] to-[#D4FF00] text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 cursor-pointer hover:shadow-lg hover:shadow-cyan-500/25 font-mono uppercase tracking-wider"
                         >
                             Register Now
                         </button>
                         <button
                             onClick={onClose}
-                            className="flex-1 sm:flex-none bg-transparent border-2 border-gray-600 hover:border-gray-400 text-gray-300 hover:text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 font-mono uppercase tracking-wider"
+                            className="flex-1 sm:flex-none bg-transparent border-2 border-gray-600 hover:border-gray-400 text-gray-300 hover:text-white font-bold py-4 px-8 rounded-lg transition-all cursor-pointer duration-300 font-mono uppercase tracking-wider"
                         >
                             Close
                         </button>

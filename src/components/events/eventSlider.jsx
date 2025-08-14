@@ -105,7 +105,7 @@ const SliderComponent = () => {
                     <div className={styles.slideLink}>
                         <button 
                             onClick={() => handleLearnMore(slideData)}
-                            className="text-inherit hover:text-cyan-400 transition-colors duration-200 cursor-pointer bg-transparent border-none font-inherit"
+                            className=" hover:text-cyan-400 transition-colors duration-200 cursor-pointer font-inherit border border-[#D4FF00] text-[#D4FF00] font-black font-orbitron p-2 rounded-md bg-black/40"
                         >
                             Learn More
                         </button>

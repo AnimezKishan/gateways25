@@ -97,12 +97,12 @@
 .slideLink a,
 .slideLink button {
   text-decoration: none;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 0.9rem;
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: -0.01rem;
   text-transform: uppercase;
-  color: #fff;
+  /* color: #fff; */
   cursor: pointer;
 }
 

@@ -12,6 +12,10 @@ body {
   --background: #ffffff;
   --foreground: #171717;
 }
+@theme {
+  --font-orbitron: "Orbitron";
+  --font-content: "VT323";
+}
 
 @theme inline {
   --color-background: var(--background);
