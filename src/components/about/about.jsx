@@ -5,9 +5,9 @@ import { cn } from "@/app/lib/utils";
 
 export function LampDemo() {
   const mentorImages = [
-    { name: "neha", image: "/about/neha.jpg" },
-    { name: "nisha", image: "/about/nisha.jpg" },
-    { name: "somnath", image: "/about/somnath.jpg" }
+    { name: "Dr. Neha Singhal", image: "/about/neha.jpg" },
+    { name: "Dr. Nisha Varghese", image: "/about/nisha.jpg" },
+    { name: "Dr. Somnath Sinha", image: "/about/somnath.jpg" }
   ];
 
   const developerImages = [
@@ -22,26 +22,26 @@ export function LampDemo() {
     { name: "Ashish Khetal", image: "/about/ashish.jpeg.jpg" },
     { name: "Saumya", image: "/about/Saumya.jpg" },
     { name: "Vivek", image: "/about/Vivek.jpeg.jpg" },
-    { name: "Team Member 7", image: null },
-    { name: "Team Member 8", image: null },
-    { name: "Team Member 9", image: null },
-    { name: "Team Member 10", image: null },
-    { name: "Team Member 11", image: null },
-    { name: "Team Member 12", image: null }
+    { name: "Angel Blessy", image: "/about/placeholder.svg" },
+    { name: "Smitha M", image: "/about/placeholder.svg" },
+    { name: "Hitesh Kumar", image: "/about/placeholder.svg" },
+    { name: "Abhinav Jain", image: "/about/placeholder.svg" },
+    { name: "Shambhavi Sinha", image: "/about/placeholder.svg" },
+    { name: "Hari Prasad B K", image: "/about/placeholder.svg" }
   ];
 
   return (
     <>
       <LampContainer className="pt-70">
         <motion.h1
-          initial={{ opacity: 0.5, y: 100 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             delay: 0.3,
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="mt-8 bg-gradient-to-br from-white to-white py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl pt-45">
+          className="mt-4 bg-gradient-to-br from-white to-white py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl pt-45 font-orbitron">
           Coordinator <br /> 
         </motion.h1>
         {/* 3 rectangular containers */}
@@ -55,11 +55,11 @@ export function LampDemo() {
               viewport={{ once: true }}
               className="bg-gradient-to-r from-slate-800 to-slate-900 shadow-lg rounded-xl w-[280px] h-[280px] md:w-[320px] md:h-[320px] flex flex-col items-center justify-center text-cyan-200 text-xl font-semibold border border-cyan-500/30 overflow-hidden"
             >
-              <div className="w-full h-3/4 flex items-center justify-center bg-black">
+              <div className={`w-full h-3/4 flex items-center justify-center bg-[white]/20 overflow-hidden `}>
                 <img 
                   src={mentor.image} 
                   alt={mentor.name}
-                  className="w-full h-full object-cover scale-110 rounded-t-xl"
+                  className="w-full h-full object-contain scale-110 rounded-t-xl"
                 />
               </div>
               <div className="h-1/4 flex items-center justify-center">
@@ -73,14 +73,14 @@ export function LampDemo() {
       {/* Section 2: About Gateways */}
       <LampContainer className="mt-[-8rem] pt-84">
         <motion.h2
-          initial={{ opacity: 0.5, y: 100 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             delay: 0.3,
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="mt-8 bg-gradient-to-br from-white to-white py-4 bg-clip-text text-center text-3xl font-medium tracking-tight text-transparent md:text-5xl pt-57">
+          className="mt-4 bg-gradient-to-br from-white to-white py-4 bg-clip-text text-center text-3xl font-medium tracking-tight text-transparent md:text-5xl pt-57 font-orbitron">
           The Developers
         </motion.h2>
         <motion.p
@@ -99,13 +99,13 @@ export function LampDemo() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 + i * 0.1, duration: 0.7, ease: "easeInOut" }}
               viewport={{ once: true }}
-              className="bg-gradient-to-r from-purple-700 to-slate-800 shadow-lg rounded-xl w-[280px] h-[280px] md:w-[320px] md:h-[320px] flex flex-col items-center justify-center text-purple-200 text-xl font-semibold border border-purple-500/30 overflow-hidden"
+              className="bg-gradient-to-r from-slate-800 to-slate-900 shadow-lg rounded-xl w-[280px] h-[280px] md:w-[320px] md:h-[320px] flex flex-col items-center justify-center text-cyan-200 text-xl font-semibold border border-purple-500/30 overflow-hidden"
             >
-              <div className="w-full h-3/4 flex items-center justify-center bg-black">
+              <div className="w-full h-3/4 flex items-center justify-center bg-[white]/20  overflow-hidden">
                 <img 
                   src={developer.image} 
                   alt={developer.name}
-                  className="w-full h-full object-contain rounded-t-xl"
+                  className="w-full h-full object-contain scale-110 rounded-t-xl"
                 />
               </div>
               <div className="h-1/4 flex items-center justify-center">
@@ -119,14 +119,14 @@ export function LampDemo() {
       {/* Section 3: Core Team */}
       <LampContainer className="mt-[-8rem] min-h-[170vh] pt-85">
         <motion.h2
-          initial={{ opacity: 0.5, y: 100 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             delay: 0.3,
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="mt-8 bg-gradient-to-br from-white to-white py-4 bg-clip-text text-center text-3xl font-medium tracking-tight text-transparent md:text-5xl pt-50">
+          className="mt-4 bg-gradient-to-br from-white to-white py-4 bg-clip-text text-center text-3xl font-medium tracking-tight text-transparent md:text-5xl pt-50 font-orbitron">
           Core Team
         </motion.h2>
         <motion.p
@@ -145,15 +145,15 @@ export function LampDemo() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 + i * 0.1, duration: 0.7, ease: "easeInOut" }}
               viewport={{ once: true }}
-              className="bg-gradient-to-r from-yellow-400 to-cyan-500 shadow-lg rounded-xl w-[280px] h-[280px] md:w-[320px] md:h-[320px] flex flex-col items-center justify-center text-yellow-900 text-xl font-semibold border border-yellow-400/30 overflow-hidden"
+              className="bg-gradient-to-r from-slate-800 to-slate-900 shadow-lg rounded-xl w-[280px] h-[280px] md:w-[320px] md:h-[320px] flex flex-col items-center justify-center text-cyan-200 text-xl font-semibold border border-yellow-400/30 overflow-hidden"
             >
               {member.image ? (
                 <>
-                  <div className="w-full h-3/4 flex items-center justify-center bg-black">
+                  <div className="w-full h-3/4 flex items-center justify-center bg-[white]/20 overflow-hidden">
                     <img 
                       src={member.image} 
                       alt={member.name}
-                      className="w-full h-full object-contain rounded-t-xl"
+                      className="w-full h-full object-contain scale-110 rounded-t-xl"
                     />
                   </div>
                   <div className="h-1/4 flex items-center justify-center">
