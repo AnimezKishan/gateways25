@@ -145,7 +145,7 @@
   background-clip: text;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  /* gap: 2rem; */
   justify-content: center;
   align-items: flex-start;
   text-align: left;
@@ -154,7 +154,7 @@
 }
 
 .hero-2-container p {
-  max-width: 90%;
+  /* max-width: 90%; */
   font-size: 1rem;
 }
 
@@ -182,7 +182,7 @@
   background-clip: text;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  /* gap: 2rem; */
   justify-content: center;
   align-items: flex-start;
   text-align: left;
@@ -238,7 +238,7 @@
 
   .hero-2-container {
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 80%;
     padding: 0;
   }
 
@@ -253,12 +253,12 @@
 
   .hero-3-container {
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 80%;
     padding: 0;
   }
 
   .hero-3-container p {
-    max-width: 90%;
+    /* max-width: 90%; */
     font-size: 1.8rem;
   }
 
