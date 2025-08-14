@@ -25,9 +25,9 @@ const SponsorsMarquee = () => {
       }}
     >
       <div className="mb-12 text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          Trusted By The Best
-        </h2>
+        <h1 className="mx-auto text-[3.5rem] w-fit text-center font-bold px-44 bg-gradient-to-r from-cyan-300 to-[#D4ff00] bg-clip-text text-transparent">
+          Trusted by the Best
+        </h1>
         <p className="mt-2 text-lg text-neutral-400">Our Sponsors</p>
 
         <Marquee className="my-5">
