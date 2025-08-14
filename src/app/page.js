@@ -10,6 +10,8 @@ import { useRef } from "react";
 import Events from "@/components/events";
 import SponsorsMarquee from "@/components/marquee";
 import Footer from "@/components/footer";
+import RegistrationProcess from "@/components/registrationProcess";
+import Contact from "@/components/contact";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -49,7 +51,9 @@ export default function Home() {
         {/* <ScrollVideo /> */}
         {/* <Hero /> */}
         <Events />
-        <SponsorsMarquee />
+        <RegistrationProcess />
+        {/* <SponsorsMarquee /> */}
+        <Contact />
         <Footer />
       </main>
     </div>

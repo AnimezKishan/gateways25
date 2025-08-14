@@ -20,7 +20,7 @@ const socialLinks = [
         <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
       </svg>
     ),
-    url: "https://instagram.com",
+    url: "https://www.instagram.com/christ_university_bangalore/",
   },
   {
     name: "LinkedIn",
@@ -41,7 +41,7 @@ const socialLinks = [
         <circle cx="4" cy="4" r="2" />
       </svg>
     ),
-    url: "https://linkedin.com",
+    url: "https://www.linkedin.com/school/christ-university-bangalore/",
   },
 ];
 
