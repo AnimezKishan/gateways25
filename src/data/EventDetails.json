@@ -11,7 +11,12 @@
       { "Name": "Rahul Gupta", "Class": "1 MCA B", "Contact": "7506732498" }
     ],
     "Team Size": "2",
-    "Prize Pool": 7000,
+      "Prize Pool": 20000,
+      "Prizes": {
+        "First": 10000,
+        "Second": 6000,
+        "Third": 4000
+      },
     "Venue": "Assembly Hall",
     "Date (tentative)": "Sept 25",
     "Registration": "On Spot",
@@ -29,7 +34,12 @@
       { "Name": "Isha", "Class": "2 MCA B", "Contact": "" }
     ],
     "Team Size": "1",
-    "Prize Pool": 3000,
+      "Prize Pool": 7500,
+      "Prizes": {
+        "First": 4000,
+        "Second": 2500,
+        "Third": 1000
+      },
     "Venue": "Seminar Hall",
     "Date (tentative)": "Sept 26",
     "Registration": "On Spot",
@@ -48,7 +58,12 @@
       { "Name": "Saumya Sahil linda", "Class": "1 MSAIM", "Contact": "8789494739" }
     ],
     "Team Size": "2-4",
-    "Prize Pool": 7000,
+      "Prize Pool": 11500,
+      "Prizes": {
+        "First": 6000,
+        "Second": 3500,
+        "Third": 2000
+      },
     "Venue": "815",
     "Date (tentative)": "Sept 26",
     "Registration": "No On-Spot",
@@ -67,7 +82,12 @@
       { "Name": "Yeshwanth S", "Class": "2 MSAIM", "Contact": "9445571303" }
     ],
     "Team Size": "2-4",
-    "Prize Pool": 12500,
+      "Prize Pool": 27500,
+      "Prizes": {
+        "First": 14000,
+        "Second": 8500,
+        "Third": 5000
+      },
     "Venue": "911",
     "Date (tentative)": "Sept 25",
     "Registration": "No On-Spot",
@@ -87,7 +107,12 @@
       { "Name": "Sourav", "Class": "1 MCA B", "Contact": "" }
     ],
     "Team Size": "1-4",
-    "Prize Pool": 12500,
+      "Prize Pool": 27500,
+      "Prizes": {
+        "First": 14000,
+        "Second": 8500,
+        "Third": 5000
+      },
     "Venue": "814",
     "Date (tentative)": "Sept 26",
     "Registration": "On Spot",
@@ -106,7 +131,12 @@
       { "Name": "Ayur", "Class": "2 MCA A", "Contact": "7263817112" }
     ],
     "Team Size": "1",
-    "Prize Pool": 3000,
+      "Prize Pool": 5500,
+      "Prizes": {
+        "First": 3000,
+        "Second": 1500,
+        "Third": 1000
+      },
     "Venue": "Briefing in 815",
     "Date (tentative)": "Sept 25",
     "Registration": "On Spot",
@@ -124,7 +154,12 @@
       { "Name": "Sachin D", "Class": "1 MCA B", "Contact": "9901952488" }
     ],
     "Team Size": "1-3",
-    "Prize Pool": 13500,
+      "Prize Pool": 34500,
+      "Prizes": {
+        "First": 17500,
+        "Second": 11000,
+        "Third": 6000
+      },
     "Venue": "815",
     "Date (tentative)": "Sept 26",
     "Registration": "On Spot",
@@ -142,7 +177,12 @@
       { "Name": "Gokul S", "Class": "2 MCA A", "Contact": "9446535503" }
     ],
     "Team Size": "2",
-    "Prize Pool": 7000,
+      "Prize Pool": 20000,
+      "Prizes": {
+        "First": 10000,
+        "Second": 6000,
+        "Third": 4000
+      },
     "Venue": "MCA Lab",
     "Date (tentative)": "Sept 25",
     "Registration": "On Spot",
@@ -160,7 +200,12 @@
       { "Name": "Priyadharshini", "Class": "2 MSAIM", "Contact": "9819057316" }
     ],
     "Team Size": "2",
-    "Prize Pool": 7000,
+      "Prize Pool": 20000,
+      "Prizes": {
+        "First": 10000,
+        "Second": 6000,
+        "Third": 4000
+      },
     "Venue": "MCA Lab",
     "Date (tentative)": "Sept 26",
     "Registration": "On Spot",
@@ -178,7 +223,12 @@
       { "Name": "Meet Virani", "Class": "1 MSAIM", "Contact": "7861944144" }
     ],
     "Team Size": "2",
-    "Prize Pool": 7000,
+      "Prize Pool": 20000,
+      "Prizes": {
+        "First": 10000,
+        "Second": 6000,
+        "Third": 4000
+      },
     "Venue": "MCA Lab",
     "Date (tentative)": "Sept 25",
     "Registration": "On Spot",
@@ -198,7 +248,12 @@
       { "Name": "Nishit D", "Class": "1 MSAIM", "Contact": "9879580870" }
     ],
     "Team Size": "1-4",
-    "Prize Pool": 20000,
+      "Prize Pool": 41000,
+      "Prizes": {
+        "First": 21000,
+        "Second": 12500,
+        "Third": 7500
+      },
     "Venue": "Online",
     "Date (tentative)": "Sept 26",
     "Registration": "No On-Spot",
